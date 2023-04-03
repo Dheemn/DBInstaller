@@ -1,6 +1,6 @@
 #!/bin/bash
 
-postgres_dep () {
+postgres () {
         #lsb_id=`lsb_release -i | awk '{print $3}'`
         echo "Installing postgresql....."
         if [ -f /etc/lsb-release ] || [ -f /etc/debian_version ]; then 
