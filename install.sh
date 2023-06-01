@@ -56,9 +56,9 @@ fi
 
 for x in $@
 do
-        if [ x == "postgresql" ]; then
-                postgresql
-        elif [ x == "redis" ]; then
+        if [ $x == "postgresql" ]; then
+                postgres
+        elif [ $x == "redis" ]; then
                 redis
         else
                 echo "Unknown database. Request to be added in script via the issue page on Github"
